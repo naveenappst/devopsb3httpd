@@ -11,5 +11,15 @@ pipeline{
         echo "Executing Scans!!!"
       }
     }
+    stage ('Dockerbuild') {
+      steps {
+        echo "Dockerbuild"
+      }
+    }
+    stage ('devstage') {
+      steps {
+        echo "devstage"
+      }
+    }
   }
 }
