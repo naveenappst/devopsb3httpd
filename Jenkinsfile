@@ -6,5 +6,10 @@ pipeline{
         echo "Build Stage"
       }
     }
+    stage ('Fortify Scan') {
+      steps {
+        echo "Executing Scans!!!"
+      }
+    }
   }
 }
