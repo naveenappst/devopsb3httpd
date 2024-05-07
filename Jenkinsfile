@@ -1,9 +1,9 @@
 pipeline{
   agent any
   stages {
-    stage ('gitSCM') {
+    stage ('QRBuild') {
       steps {
-        echo "Build Stage"
+        echo "Build pipeline"
       }
     }
     stage ('Fortify Scan') {
