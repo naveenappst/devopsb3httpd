@@ -13,17 +13,17 @@ pipeline{
     }
     stage ('Dockerbuild') {
       steps {
-        echo "Dockerbuild"
+        echo "Docker Stage"
       }
     }
     stage ('Deploy to Dev') {
       steps {
-        echo "Devstage"
+        echo "Dev pipeline"
       }
     }
     stage ('Deploy to Test') {
       steps {
-        echo "Teststage"
+        echo "Test pipeline"
   }
 }
     stage ('Deploy to Satge') {
