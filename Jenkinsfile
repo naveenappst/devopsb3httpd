@@ -16,9 +16,24 @@ pipeline{
         echo "Dockerbuild"
       }
     }
-    stage ('devstage') {
+    stage ('Deploy to Dev') {
       steps {
-        echo "devstage"
+        echo "Devstage"
+      }
+    }
+    stage ('Deploy to Test') {
+      steps {
+        echo "Teststage"
+  }
+}
+    stage ('Deploy to Satge') {
+      steps {
+        echo "Satge pipeline"
+  }
+    }
+    stage ('Deploy to Prod') {
+      steps {
+        echo "Prod pipeline"
       }
     }
   }
